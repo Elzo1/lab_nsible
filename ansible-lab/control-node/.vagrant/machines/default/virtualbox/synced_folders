@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"type":"nfs","guestpath":"/vagrant","hostpath":"/C/Users/leide/OneDrive/Área de Trabalho/Curso DEVOPS/devops/vagrant-lab2/ansible-lab/control-node","disabled":false,"__vagrantfile":true,"map_uid":0,"map_gid":0,"nfs_version":3,"nfs_udp":true,"uuid":"3358423770","mount_options":["vers=3","udp","nolock"]}}}

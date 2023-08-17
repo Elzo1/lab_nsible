@@ -1,0 +1,10 @@
+mysql_root_password: tico100
+mysql_databases:
+  - name: teste_db
+    encoding: latin1
+    collation: latin1_general_ci
+mysql_users:
+  - name: example_user
+    host: "%"
+    password: tico100
+    priv: "teste_db.*:ALL"

@@ -1,0 +1,25 @@
+---
+- name: Configurar servidor de banco de dados
+  hosts: db01
+
+  user: vagrant
+  become: true
+  vars_files:
+    - vars/main.yaml
+  vars:
+    dbname: "db01"
+    dbusername: "root"
+    dbpassword: "882927"
+  tasks:
+    - name: configurando hosts lab ansible  
+      lineinfile:
+        dest: /etc/hosts
+        state: present
+        line: "{{item}}" 
+      with_items:
+        - 192.168.2.7 control-node
+        - 192.168.2.8 app01
+        - 192.168.2.9 db01
+  roles:
+    - configuração-default-so
+     
